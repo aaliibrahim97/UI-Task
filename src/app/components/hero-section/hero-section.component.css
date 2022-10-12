@@ -1,0 +1,22 @@
+.active {
+    padding: 30px;
+    border-radius: 40px;
+    transition: all ease-in-out 1s;
+}
+.unactive {
+    padding: 0px;
+    border-radius: 0px;
+    transition: all ease-in-out 1s;
+}
+.ratio {
+    background: #000000c4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 120rem;
+    height: 59rem;
+    top: 0px;
+    z-index: 9999;
+}

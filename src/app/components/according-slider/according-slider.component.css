@@ -1,0 +1,114 @@
+.accordion {
+    width: 100%;
+    /* max-width: 1080px; */
+    height: 40rem;
+    overflow: hidden;
+    margin: 0px auto;
+    position: relative;
+    bottom: 45px;
+  }
+  .accordion ul {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+    margin: 0;
+    padding: 0;
+    /*ul*/
+  }
+  .accordion ul li {
+    display: table-cell;
+    vertical-align: bottom;
+    position: relative;
+    width: 33.33%;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    transition: all 500ms ease;
+  }
+  .accordion ul li:nth-child(1) {
+    background-image:url('https://mc-db4d5a29-212b-4323-b181-2834-cdn-endpoint.azureedge.net/-/media/sites/adports/home/fluid-slides/fluid-slide-3.jpg?rev=f9cb6af73fa64a9c9e575f81d39513a8&hash=867088E82373823E70BD8350BDF0572A')  
+   }
+  .accordion ul li:nth-child(2) {
+    background-image:url('https://mc-db4d5a29-212b-4323-b181-2834-cdn-endpoint.azureedge.net/-/media/sites/adports/home/fluid-slides/homepage-fluid-slide-new-2.jpg?rev=9ff85ae7195e44be91cfbb4544714783&hash=351B49DF5EB4F394972597CBD37D5EE5')
+  }
+  .accordion ul li:nth-child(3) {
+    background-image:url('https://mc-db4d5a29-212b-4323-b181-2834-cdn-endpoint.azureedge.net/-/media/sites/adports/home/fluid-slides/fluid-slide-new.jpg?rev=16f0070d4c3544b683739fe1be92e562&hash=89522B4358DC986FC1A9F01A1F098AAB')
+  }
+  .accordion ul li:nth-child(4) {
+    background-image:url('https://mc-db4d5a29-212b-4323-b181-2834-cdn-endpoint.azureedge.net/-/media/sites/adports/home/fluid-slides/fluid-slide-4.jpg?rev=787e277b83cc4a81b853062f754f059c&hash=9A6DFEC578A5DAFE32AC1CCDE7380FA0')
+  }
+  .accordion ul li:nth-child(5) {
+    background-image:url('https://mc-db4d5a29-212b-4323-b181-2834-cdn-endpoint.azureedge.net/-/media/sites/adports/home/fluid-slides/fluid-slide-5.jpg?rev=8b4c9328ce834e72973c3dbca7574650&hash=012AC49834A3FABC657A2EAB2A47B5F0')  
+  }
+  .accordion ul li div {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+  }
+  .accordion ul li div a {
+    display: block;
+    height: 40rem;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    vertical-align: bottom;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    color: #fff;
+    text-decoration: none;
+    font-family: system-ui;
+    transition: all 200ms ease;
+  }
+  .accordion ul li div a * {
+    opacity: 0;
+    margin: 0;
+    position: relative;
+    z-index: 5;
+    overflow: hidden;
+    transform: translateX(-20px);
+    transition: all 400ms ease;
+    font-size: 15px;
+    font-weight: 800;
+  }
+  .accordion ul li div a div {
+
+    top: 160px;
+  }
+  .accordion ul li div a div {
+    top: 160px;
+    font-size: 13.5px;
+  }
+  .accordion ul:hover li {
+    width: 10%;
+  }
+  .accordion ul:hover li:hover {
+    width: 80%;
+  }
+  .accordion ul:hover li:hover a {
+    background: rgba(0, 0, 0, 0.4);
+  }
+  .accordion ul:hover li:hover a * {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  @media screen and (max-width: 600px) {
+    body {
+      margin: 0;
+    }
+  
+    .accordion {
+      height: auto;
+    }
+    .accordion ul li,
+  .accordion ul li:hover,
+  .accordion ul:hover li,
+  .accordion ul:hover li:hover {
+      position: relative;
+      display: table;
+      table-layout: fixed;
+      width: 100%;
+      transition: none;
+    }
+  }
