@@ -20,12 +20,14 @@ export class HeroSectionComponent implements OnInit {
 
   public sections = 4;
 
-  public scroll;
+  public scroll = 0;
 
   iframe:boolean = false
   
   constructor(private renderer: Renderer2) {}
+  
   src:string ='https://www.youtube.com/embed/jHGrea2uypI'
+  
   ngOnInit(): void {
     this.renderer.listen(window, 'scroll', ($event) => {
       this.scroll = window.scrollY / this.sections;

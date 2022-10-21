@@ -14,7 +14,6 @@ html, body{
 }
 
 main {
-  position: relative;
   padding: 1em;
   display: grid;
   grid-template-columns: 1fr minmax(120px, auto);
@@ -34,7 +33,6 @@ main .triangle {
 main article {
   position: relative;
   overflow: hidden !important;
-  padding-left: 136px;
 }
 main article .sub {
   font-size: 2rem;

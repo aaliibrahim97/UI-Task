@@ -1,11 +1,9 @@
 .accordion {
     width: 100%;
-    /* max-width: 1080px; */
-    height: 40rem;
+    height: auto;
     overflow: hidden;
     margin: 0px auto;
     position: relative;
-    bottom: 45px;
   }
   .accordion ul {
     width: 100%;
@@ -13,7 +11,6 @@
     table-layout: fixed;
     margin: 0;
     padding: 0;
-    /*ul*/
   }
   .accordion ul li {
     display: table-cell;
@@ -94,13 +91,9 @@
   }
   
   @media screen and (max-width: 600px) {
-    body {
-      margin: 0;
-    }
-  
-    .accordion {
+    /* .accordion {
       height: auto;
-    }
+    } */
     .accordion ul li,
   .accordion ul li:hover,
   .accordion ul:hover li,
